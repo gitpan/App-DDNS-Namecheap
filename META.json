@@ -1,5 +1,5 @@
 {
-   "abstract" : "Dynamic DNS update for Namecheap registered domains.",
+   "abstract" : "Dynamic DNS update utility for Namecheap registered domains",
    "author" : [
       "David Watson <dwatson@cpan.org>"
    ],
@@ -28,7 +28,6 @@
       },
       "runtime" : {
          "requires" : {
-            "Carp" : "0",
             "LWP::Simple" : "0",
             "Moose" : "0",
             "Mozilla::CA" : "0",
@@ -48,12 +47,13 @@
       "bugtracker" : {
          "web" : "https://github.com/terminalfool/App-DDNS-Namecheap/issues"
       },
+      "homepage" : "http://search.cpan.org/~dwatson/App-DDNS-Namecheap/",
       "repository" : {
          "type" : "git",
          "url" : "git://github.com/terminalfool/App-DDNS-Namecheap.git",
          "web" : "https://github.com/terminalfool/App-DDNS-Namecheap"
       }
    },
-   "version" : "0.01"
+   "version" : "0.011"
 }
 

@@ -10,7 +10,7 @@ use ExtUtils::MakeMaker 6.30;
 
 
 my %WriteMakefileArgs = (
-  "ABSTRACT" => "Dynamic DNS update for Namecheap registered domains.",
+  "ABSTRACT" => "Dynamic DNS update utility for Namecheap registered domains",
   "AUTHOR" => "David Watson <dwatson\@cpan.org>",
   "BUILD_REQUIRES" => {},
   "CONFIGURE_REQUIRES" => {
@@ -21,7 +21,6 @@ my %WriteMakefileArgs = (
   "LICENSE" => "perl",
   "NAME" => "App::DDNS::Namecheap",
   "PREREQ_PM" => {
-    "Carp" => 0,
     "LWP::Simple" => 0,
     "Moose" => 0,
     "Mozilla::CA" => 0
@@ -31,7 +30,7 @@ my %WriteMakefileArgs = (
     "Test::More" => 0,
     "lib" => 0
   },
-  "VERSION" => "0.01",
+  "VERSION" => "0.011",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -39,7 +38,6 @@ my %WriteMakefileArgs = (
 
 
 my %FallbackPrereqs = (
-  "Carp" => 0,
   "Data::Dumper" => 0,
   "LWP::Simple" => 0,
   "Moose" => 0,

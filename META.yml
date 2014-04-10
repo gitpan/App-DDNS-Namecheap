@@ -1,5 +1,5 @@
 ---
-abstract: 'Dynamic DNS update for Namecheap registered domains.'
+abstract: 'Dynamic DNS update utility for Namecheap registered domains'
 author:
   - 'David Watson <dwatson@cpan.org>'
 build_requires:
@@ -16,12 +16,12 @@ meta-spec:
   version: 1.4
 name: App-DDNS-Namecheap
 requires:
-  Carp: 0
   LWP::Simple: 0
   Moose: 0
   Mozilla::CA: 0
   perl: 5.010
 resources:
   bugtracker: https://github.com/terminalfool/App-DDNS-Namecheap/issues
+  homepage: http://search.cpan.org/~dwatson/App-DDNS-Namecheap/
   repository: git://github.com/terminalfool/App-DDNS-Namecheap.git
-version: 0.01
+version: 0.011

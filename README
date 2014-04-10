@@ -1,15 +1,16 @@
 NAME
-    App::DDNS::Namecheap - Dynamic DNS update for Namecheap registered
-    domains.
+    App::DDNS::Namecheap - Dynamic DNS update utility for Namecheap
+    registered domains
 
 VERSION
-    version 0.01
+    version 0.011
 
 SYNOPSIS
         my $domain =  App::DDNS::Namecheap->new(
                           domain   => 'mysite.org',
                           password => 'abcdefghijklmnopqrstuvwxyz012345',
-                          hosts    => [ "@", "www" ],
+                          hosts    => [ "@", "www", "*" ],
+                          ip       => '127.0.0.1',      #defaults to external ip
         );
 
         $domain->update();
@@ -17,6 +18,15 @@ SYNOPSIS
 DESCRIPTION
     This module provides a method for setting the address records of your
     Namecheap registered domains to your external IP address.
+
+METHODS
+    update
+        Updates Namecheap A records using the four attributes listed above.
+
+    external_ip
+        Pulls external ip using a public service.
+
+    log Logs output to stderr.
 
 CAVEATS
     Tested under darwin only.
