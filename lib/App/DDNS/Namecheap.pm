@@ -1,6 +1,6 @@
 package App::DDNS::Namecheap;
 {
-  $App::DDNS::Namecheap::VERSION = '0.011';
+  $App::DDNS::Namecheap::VERSION = '0.012';
 }
 
 use Moose;
@@ -47,7 +47,7 @@ App::DDNS::Namecheap - Dynamic DNS update utility for Namecheap registered domai
 
 =head1 VERSION
 
-version 0.011
+version 0.012
 
 =head1 SYNOPSIS
 

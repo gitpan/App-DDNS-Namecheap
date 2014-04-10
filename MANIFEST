@@ -8,6 +8,7 @@ Makefile.PL
 README
 lib/App/DDNS/Namecheap.pm
 scripts/update.pl
+scripts/update_numerous.pl
 t/1.t
 xt/release/pod-coverage.t
 xt/release/pod-syntax.t

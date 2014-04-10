@@ -3,7 +3,7 @@ NAME
     registered domains
 
 VERSION
-    version 0.011
+    version 0.012
 
 SYNOPSIS
         my $domain =  App::DDNS::Namecheap->new(
