@@ -3,14 +3,13 @@ NAME
     registered domains
 
 VERSION
-    version 0.012
+    version 0.013
 
 SYNOPSIS
         my $domain =  App::DDNS::Namecheap->new(
                           domain   => 'mysite.org',
                           password => 'abcdefghijklmnopqrstuvwxyz012345',
                           hosts    => [ "@", "www", "*" ],
-                          ip       => '127.0.0.1',      #defaults to external ip
         );
 
         $domain->update();
@@ -21,15 +20,7 @@ DESCRIPTION
 
 METHODS
     update
-        Updates Namecheap A records using the four attributes listed above.
-
-    external_ip
-        Pulls external ip using a public service.
-
-    log Logs output to stderr.
-
-CAVEATS
-    Tested under darwin only.
+        Updates Namecheap A records using the three attributes listed above.
 
 AUTHOR
     David Watson <dwatson@cpan.org>
